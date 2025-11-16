@@ -58,11 +58,11 @@ header {
   color: white;
 }
 
-/* HERO WITH ANIMATION */
+/* HERO */
 .hero {
   padding: 3rem 0 2.5rem;
   background: linear-gradient(135deg, #E9F2FF, #DCEAFF, #CFE2FF);
-  animation: gradientShift 10s infinite alternate, fadeIn 1.5s ease-out forwards;
+  animation: fadeIn 1.4s ease-out forwards, gradientShift 10s infinite alternate;
   opacity: 0;
 }
 
@@ -76,7 +76,7 @@ header {
 
 .hero-title {
   font-size: 2.3rem;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .name-highlight {
@@ -95,38 +95,36 @@ header {
 }
 
 .hero-subtitle {
+  margin-top: .4rem;
   font-size: 1.1rem;
   color: #123B8A;
-  margin-top: .4rem;
 }
 
-/* NEW GRAD LINE */
 .grad-line {
   font-size: 0.95rem;
   color: #2A6DEB;
   margin-top: 0.3rem;
   font-weight: 500;
-  opacity: 0;
-  animation: fadeUp 1.4s forwards 0.5s;
-}
-
-.hero-summary {
-  margin-top: 1rem;
-  max-width: 650px;
 }
 
 /* BUTTONS */
-.hero-buttons { margin-top: 1.4rem; display: flex; gap: .8rem; }
+.hero-buttons {
+  margin-top: 1.4rem;
+  display: flex;
+  gap: .8rem;
+}
 
 .btn {
   padding: .6rem 1.4rem;
   border-radius: 999px;
   font-size: .95rem;
-  cursor: pointer;
-  transition: .25s;
+  transition: 0.25s;
 }
 
-.btn-primary { background: #2A6DEB; color: white; }
+.btn-primary {
+  background: #2A6DEB;
+  color: white;
+}
 .btn-primary:hover { background: #4E8CFF; }
 
 .btn-ghost {
@@ -160,7 +158,42 @@ header {
   margin-bottom: .9rem;
 }
 
-/* CARDS */
+/* SKILLS */
+.skills-group {
+  margin-bottom: 1.5rem;
+}
+
+.skills-group h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: .4rem;
+  color: #123B8A;
+}
+
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+}
+
+.skill-tag {
+  background: #DCEAFF;
+  color: #123B8A;
+  padding: .35rem .75rem;
+  border-radius: 999px;
+  font-size: .85rem;
+  border: 1px solid transparent;
+  transition: .25s;
+  cursor: default;
+}
+
+.skill-tag:hover {
+  transform: translateY(-3px);
+  border-color: #2A6DEB;
+  background: white;
+}
+
+/* PROJECT CARDS */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -169,38 +202,28 @@ header {
 
 .card {
   background: white;
-  border-radius: 12px;
   padding: 1rem;
+  border-radius: 12px;
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
   transition: .3s;
 }
 
-.card:hover {
-  transform: translateY(-4px);
-}
+.card:hover { transform: translateY(-4px); }
 
 .tag {
   display: inline-block;
   background: #DCEAFF;
   padding: .25rem .6rem;
   font-size: .8rem;
-  margin: 3px;
   border-radius: 999px;
+  margin: 3px;
 }
 
 /* FOOTER */
 footer {
-  text-align: center;
-  padding: 1.2rem;
   background: white;
   border-top: 1px solid #cdddf7;
+  text-align: center;
+  padding: 1.2rem;
   font-size: .85rem;
-  opacity: 0;
-  animation: fadeUp 1.4s forwards .9s;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-  .hero-title { font-size: 1.9rem; }
-  .navbar { flex-direction: column; gap: 10px; }
 }
