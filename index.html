@@ -13,141 +13,119 @@
     <div class="logo">VIHAS ADI</div>
     <nav class="nav-links">
       <a href="index.html">Home</a>
-      <a href="projects.html">All Projects</a>
+      <a href="projects.html">Projects</a>
       <a href="research.html">Research</a>
-
-      <div class="dropdown">
-        <a class="dropdown-toggle" href="projects.html">Projects</a>
-        <div class="dropdown-menu">
-          <a href="project-ai-research-paper-summarizer.html">AI Research Paper Summarizer</a>
-          <a href="project-medical-dose-diffusion.html">Medical Dose Diffusion Model</a>
-          <a href="project-brain-tumor-segmentation.html">Brain Tumor Segmentation</a>
-          <a href="project-ride-demand-prediction.html">Ride Demand Prediction</a>
-        </div>
-      </div>
-
       <a href="contact.html">Contact</a>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="hero animated-hero">
+<!-- ===== HERO SECTION ===== -->
+<section class="hero animated-hero">
   <div class="container hero-inner fade-sequence">
-    <h1 class="hero-title fade-text">Hi, I'm <span class="name-highlight">VIHAS ADI</span></h1>
+    
+    <h1 class="hero-title fade-text">
+      Hi, I'm <span class="name-highlight">VIHAS ADI</span>
+    </h1>
+
     <p class="hero-subtitle fade-text">
       AI Engineer • Machine Learning Engineer • Generative AI Engineer
     </p>
+
     <p class="hero-summary fade-text">
-      I build intelligent systems using Machine Learning, Large Language Models, and Deep Learning. 
-      Passionate about transforming ideas into scalable AI solutions.
+      I am a Master's student in Artificial Intelligence pursuing a career in AI Engineering. 
+      I specialize in Machine Learning, Generative AI, and Large Language Model development using frameworks like 
+      PyTorch, LangChain, TensorFlow, and Hugging Face.
     </p>
 
     <div class="hero-buttons fade-text">
-      <a class="btn btn-primary" href="https://drive.google.com/drive/u/1/folders/1tfRbpnnrAfbBGNL-QjHLnBcTkL0W_l1o" target="_blank">View Resume</a>
-      <a class="btn btn-ghost" href="projects.html">Explore My Work</a>
+      <a class="btn btn-primary" href="https://drive.google.com/drive/u/1/folders/1tfRbpnnrAfbBGNL-QjHLnBcTkL0W_l1o" target="_blank">📄 View Resume</a>
+      <a class="btn btn-ghost" href="projects.html">🚀 Explore Projects</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== EDUCATION ===== -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Education</h2>
+    <ul class="clean-list">
+      <li><strong>M.S. Artificial Intelligence</strong> — Yeshiva University, New York (2026)</li>
+      <li><strong>B.Tech Computer Science Engineering</strong> — TKR College of Engineering & Technology, Hyderabad (2023)</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Technical Skills</h2>
+    <p><strong>Programming:</strong> Python, SQL</p>
+    <p><strong>AI & ML:</strong> Machine Learning, Deep Learning, Generative AI, LLMs, NLP, Computer Vision</p>
+    <p><strong>Frameworks:</strong> PyTorch, TensorFlow, Scikit-Learn, Hugging Face, LangChain</p>
+    <p><strong>Tools:</strong> Git, Docker, FastAPI, MLflow (basic)</p>
+    <p><strong>Cloud & Databases:</strong> AWS (S3 / EC2), MySQL, MongoDB</p>
+  </div>
+</section>
+
+<!-- ===== FEATURED PROJECTS ===== -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Featured Projects</h2>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>AI Research Paper Summarizer</h3>
+        <p>LLM-powered summarizer using LangChain + RAG with vector search and automated review generation.</p>
+        <div class="tags">
+          <span class="tag">LLMs</span>
+          <span class="tag">LangChain</span>
+          <span class="tag">RAG</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Medical Dose Diffusion Model</h3>
+        <p>Diffusion-based model for radiotherapy dose prediction using PyTorch and MambaVision.</p>
+        <div class="tags">
+          <span class="tag">Diffusion Models</span>
+          <span class="tag">Healthcare AI</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Brain Tumor Segmentation</h3>
+        <p>U-Net deep learning model for segmentation of MRI brain tumor regions.</p>
+        <div class="tags">
+          <span class="tag">U-Net</span>
+          <span class="tag">Computer Vision</span>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Education</h2>
-      <ul class="clean-list">
-        <li><strong>M.S. Artificial Intelligence</strong> — Yeshiva University, New York (2026)</li>
-        <li><strong>B.Tech Computer Science Engineering</strong> — TKR College of Engineering &amp; Technology, Hyderabad (2023)</li>
-      </ul>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      <p><strong>Programming:</strong> Python, SQL</p>
-      <p><strong>AI / ML:</strong> Machine Learning, Deep Learning, Generative AI, LLMs, NLP, Computer Vision</p>
-      <p><strong>Frameworks:</strong> PyTorch, TensorFlow, Scikit-Learn, Hugging Face, LangChain</p>
-      <p><strong>Tools:</strong> Git, Docker, FastAPI, MLflow (basic)</p>
-      <p><strong>Cloud &amp; Databases:</strong> AWS (S3 / EC2), MySQL, MongoDB</p>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Featured Projects</h2>
-      <div class="card-grid">
-        <div class="card">
-          <h3>AI Research Paper Summarizer</h3>
-          <p>
-            LangChain + RAG system that retrieves research papers and generates section-wise summaries and reviews using LLMs and vector databases.
-          </p>
-          <div class="tags">
-            <span class="tag">LLMs</span>
-            <span class="tag">RAG</span>
-            <span class="tag">LangChain</span>
-          </div>
-          <div class="hero-buttons" style="margin-top:0.6rem;">
-            <a class="btn btn-ghost" href="project-ai-research-paper-summarizer.html">View Details</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Medical Dose Diffusion Model</h3>
-          <p>
-            Diffusion-based deep learning model for radiotherapy dose prediction using PyTorch, DoseDiff, and MambaVision for Head &amp; Neck cancer planning.
-          </p>
-          <div class="tags">
-            <span class="tag">Diffusion Models</span>
-            <span class="tag">PyTorch</span>
-            <span class="tag">Healthcare AI</span>
-          </div>
-          <div class="hero-buttons" style="margin-top:0.6rem;">
-            <a class="btn btn-ghost" href="project-medical-dose-diffusion.html">View Details</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <h3>Brain Tumor Segmentation</h3>
-          <p>
-            U-Net-based semantic segmentation model for MRI scans to detect brain tumor regions with improved performance using augmentation and loss tuning.
-          </p>
-          <div class="tags">
-            <span class="tag">Computer Vision</span>
-            <span class="tag">U-Net</span>
-            <span class="tag">Segmentation</span>
-          </div>
-          <div class="hero-buttons" style="margin-top:0.6rem;">
-            <a class="btn btn-ghost" href="project-brain-tumor-segmentation.html">View Details</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <h2 class="section-title">Certifications</h2>
-      <ul class="clean-list">
-        <li>Google Cloud Generative AI Certificate (Google Cloud Skills Boost)</li>
-        <li>AWS Machine Learning Foundations (AWS &amp; Udacity)</li>
-        <li>Microsoft Azure AI Fundamentals (AI-900)</li>
-      </ul>
-    </div>
-  </section>
-
-</main>
+<!-- ===== CERTIFICATIONS ===== -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Certifications</h2>
+    <ul class="clean-list">
+      <li>Google Cloud Generative AI Certificate</li>
+      <li>AWS Machine Learning Foundations</li>
+      <li>Microsoft Azure AI Fundamentals (AI-900)</li>
+    </ul>
+  </div>
+</section>
 
 <footer>
   <div class="container footer-inner">
-    <div>© 2025 · Portfolio of Vihas Adi</div>
-    <div>
-      New York, NY · 
-      <a href="mailto:adivihas@gmail.com">adivihas@gmail.com</a> · 
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> · 
-      <a href="https://github.com/vihasadi" target="_blank">GitHub</a>
-    </div>
+    <p>© 2025 • Portfolio of Vihas Adi</p>
+    <p>🌍 New York, USA | <a href="mailto:adivihas@gmail.com">Email Me</a></p>
   </div>
 </footer>
 
 </body>
 </html>
+
 
