@@ -1,87 +1,299 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Vihas Adi | AI Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vihas Adi | AI/ML Portfolio</title>
+  <meta name="description" content="Vihas Adi — AI Research Engineer / ML Engineer / Generative AI Engineer. Projects in diffusion models, RAG, deployment, and medical imaging." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">VIHAS ADI</a>
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#certs">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a class="btn" href="files/Vihas_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </div>
+  </header>
 
-<!-- NAVBAR -->
-<header class="nav">
-  <div class="nav-container">
-    <div class="logo">VIHAS ADI</div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a class="resume-btn" href="files/Vihas_Resume.pdf" target="_blank">Resume</a>
-  </div>
-</header>
+  <!-- HERO -->
+  <section id="top" class="hero" style="background-image:url('assets/nyc.jpg')">
+    <div class="hero-overlay"></div>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-card">
+        <img class="avatar" src="assets/vihas.jpg" alt="Vihas Adi portrait" />
+        <div class="hero-text">
+          <h1>AI Research Engineer · ML Engineer · Generative AI Engineer</h1>
+          <p class="sub">
+            I build deep learning and LLM-powered systems — from diffusion models and medical imaging pipelines
+            to production-grade RAG apps with deployment and monitoring.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn ghost" href="files/Vihas_Resume.pdf" target="_blank" rel="noopener">Download Resume</a>
+          </div>
 
-  <div class="hero-content">
-    <div class="hero-card">
-      <img src="assets/vihas.jpg" class="profile-pic" alt="Vihas Adi">
-
-      <div class="hero-text">
-        <h1>AI Research Engineer · ML Engineer · Generative AI Engineer</h1>
-        <p>
-          I build deep learning and LLM-powered systems — from diffusion models
-          and medical imaging pipelines to production-grade RAG apps with deployment.
-        </p>
-
-        <div class="buttons">
-          <a href="#projects" class="btn primary">View Projects</a>
-          <a href="#contact" class="btn">Contact</a>
-          <a href="files/Vihas_Resume.pdf" class="btn outline" target="_blank">Download Resume</a>
-        </div>
-
-        <div class="meta">
-          📍 New York, NY · 📧 adivihas@gmail.com · 📞 347-665-6612
+          <div class="meta">
+            <span>📍 New York, NY</span>
+            <span>📧 <a href="mailto:adivihas@gmail.com">adivihas@gmail.com</a></span>
+            <span>📞 <a href="tel:+13476656612">347-665-6612</a></span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- CONTENT SECTIONS PLACEHOLDER -->
-<section id="about" class="section">
-  <h2>About</h2>
-  <p>Master’s student in Artificial Intelligence focused on ML, GenAI, diffusion models, and RAG systems.</p>
-</section>
+  <main class="container main">
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="section-head">
+        <h2>About</h2>
+        <p class="muted">Quick snapshot of who I am and what I build.</p>
+      </div>
 
-<section id="projects" class="section light">
-  <h2>Projects</h2>
-  <p>Your projects go here.</p>
-</section>
+      <div class="card">
+        <p>
+          I’m a Master’s student in Artificial Intelligence with hands-on experience building deep learning and generative AI systems.
+          My work focuses on PyTorch-based model development, diffusion models, transformers, and LLM pipelines including Retrieval-Augmented Generation (RAG).
+          I’ve shipped end-to-end ML workflows from data preprocessing and training to evaluation, production inference, and deployment using Docker, MLflow, and FastAPI.
+        </p>
+        <div class="facts">
+          <div class="fact"><div class="k">Focus</div><div class="v">Diffusion · RAG · Deployment</div></div>
+          <div class="fact"><div class="k">Strength</div><div class="v">End-to-end ML lifecycle</div></div>
+          <div class="fact"><div class="k">Roles</div><div class="v">AI Engineer · ML Engineer</div></div>
+        </div>
+      </div>
+    </section>
 
-<section id="experience" class="section">
-  <h2>Experience</h2>
-  <p>Your experience goes here.</p>
-</section>
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p class="muted">Selected work with measurable outcomes.</p>
+      </div>
 
-<section id="skills" class="section light">
-  <h2>Skills</h2>
-  <p>Python, PyTorch, LLMs, RAG, AWS, Docker, FastAPI</p>
-</section>
+      <div class="grid">
+        <!-- Project 1 -->
+        <article class="project">
+          <img src="assets/proj-paper.jpg" alt="AI Research Paper Summarizer" />
+          <div class="p-body">
+            <h3>AI Research Paper Summarizer (RAG + LangChain)</h3>
+            <p>
+              End-to-end pipeline to retrieve papers, parse PDFs, and generate structured summaries + peer-style reviews.
+              Built section-aware summarization and JSON outputs. Served via FastAPI and Docker; deployable on AWS EC2.
+            </p>
+            <div class="tags">
+              <span>LangChain</span><span>RAG</span><span>LLMs</span><span>FastAPI</span><span>Docker</span><span>AWS</span>
+            </div>
+            <div class="p-links">
+              <a class="btn small" href="#" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn small ghost" href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
 
-<section id="contact" class="section">
-  <h2>Contact</h2>
-  <p>Email: adivihas@gmail.com</p>
-</section>
+        <!-- Project 2 -->
+        <article class="project">
+          <img src="assets/proj-dosediff.jpg" alt="Medical Dose Diffusion Model" />
+          <div class="p-body">
+            <h3>Medical Dose Diffusion Model (DoseDiff + MambaVision)</h3>
+            <p>
+              Developed and benchmarked DoseDiff, CT-Mamba, and hybrid architectures for radiotherapy dose prediction (Open-KBP).
+              Achieved major improvements after extended training: Dose Score 12.38 → 1.56; DVH error 7.37 → 0.71.
+            </p>
+            <div class="tags">
+              <span>PyTorch</span><span>DoseDiff</span><span>MambaVision</span><span>DVH</span><span>Ablations</span>
+            </div>
+            <div class="p-links">
+              <a class="btn small" href="#" target="_blank" rel="noopener">GitHub</a>
+              <a class="btn small ghost" href="#" target="_blank" rel="noopener">Report</a>
+            </div>
+          </div>
+        </article>
 
+        <!-- Project 3 -->
+        <article class="project">
+          <img src="assets/proj-brain.jpg" alt="Brain Tumor Segmentation" />
+          <div class="p-body">
+            <h3>Brain Tumor Segmentation</h3>
+            <p>
+              Evaluated U-Net, Attention U-Net, FCN, and SegNet for MRI segmentation. FCN achieved best generalization (Dice 0.75, IoU 0.66).
+              Analyzed tradeoffs between accuracy, overlap metrics, and overfitting under limited data.
+            </p>
+            <div class="tags">
+              <span>Computer Vision</span><span>Segmentation</span><span>Dice</span><span>IoU</span>
+            </div>
+            <div class="p-links">
+              <a class="btn small" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project">
+          <img src="assets/proj-churn.jpg" alt="Customer Churn Prediction" />
+          <div class="p-body">
+            <h3>Customer Churn Prediction</h3>
+            <p>
+              Improved churn prediction by 20–25% (MAE/RMSE) moving from Linear/Ridge to Gradient Boosting.
+              Feature engineering delivered an additional 10–15% reduction; used grid search + cross-validation for stability.
+            </p>
+            <div class="tags">
+              <span>Scikit-learn</span><span>Gradient Boosting</span><span>CV</span><span>Feature Engineering</span>
+            </div>
+            <div class="p-links">
+              <a class="btn small" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project">
+          <img src="assets/proj-ride.jpg" alt="Ride Demand Prediction" />
+          <div class="p-body">
+            <h3>Ride Demand Prediction (Time Series)</h3>
+            <p>
+              Forecasting pipeline using temporal + spatial features across 12+ months of data.
+              Reduced RMSE by 12–18% vs seasonal baselines and translated forecasts into operational planning insights.
+            </p>
+            <div class="tags">
+              <span>Forecasting</span><span>Time Series</span><span>RMSE</span><span>ML Pipelines</span>
+            </div>
+            <div class="p-links">
+              <a class="btn small" href="#" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <p class="hint muted">
+        Replace the “GitHub/Demo/Report” # links with your real URLs.
+      </p>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="section-head">
+        <h2>Experience</h2>
+        <p class="muted">Work that proves execution.</p>
+      </div>
+
+      <div class="stack">
+        <div class="role">
+          <div class="role-head">
+            <h3>AI Research Engineer (Academic & Independent Projects) — Yeshiva University</h3>
+            <span class="muted">Jan 2024 – Present</span>
+          </div>
+          <ul>
+            <li>Built and trained diffusion-based models for radiotherapy dose prediction using PyTorch.</li>
+            <li>Integrated MambaVision-based architectures; evaluated clinical dose metrics and DVH analysis.</li>
+            <li>Implemented LLM-powered ingestion + RAG pipelines for research paper retrieval and summarization.</li>
+            <li>Designed reproducible workflows with Git, Docker, and MLflow; served models via FastAPI.</li>
+          </ul>
+        </div>
+
+        <div class="role">
+          <div class="role-head">
+            <h3>Machine Learning Intern — OctaZen Software Solutions Pvt. Ltd.</h3>
+            <span class="muted">May 2022 – Jun 2022</span>
+          </div>
+          <ul>
+            <li>Built and optimized supervised ML models using Python and Scikit-learn on real-world datasets.</li>
+            <li>Created preprocessing pipelines (missing values, scaling, encoding) and compared models using multiple metrics.</li>
+            <li>Executed end-to-end ML workflow: analysis → training → validation → interpretation.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p class="muted">Tools I use to ship and scale.</p>
+      </div>
+
+      <div class="pillgrid">
+        <div class="pillcard">
+          <h4>Programming</h4>
+          <div class="pills"><span>Python</span><span>SQL</span></div>
+        </div>
+        <div class="pillcard">
+          <h4>AI / ML</h4>
+          <div class="pills"><span>Machine Learning</span><span>Deep Learning</span><span>Generative AI</span><span>LLMs</span><span>NLP</span><span>Computer Vision</span><span>RAG</span></div>
+        </div>
+        <div class="pillcard">
+          <h4>Frameworks</h4>
+          <div class="pills"><span>PyTorch</span><span>TensorFlow</span><span>Scikit-learn</span><span>CUDA</span></div>
+        </div>
+        <div class="pillcard">
+          <h4>Evaluation</h4>
+          <div class="pills"><span>RMSE</span><span>MAE</span><span>Dice</span><span>IoU</span><span>DVH Analysis</span><span>Ablations</span></div>
+        </div>
+        <div class="pillcard">
+          <h4>MLOps / Deployment</h4>
+          <div class="pills"><span>Git</span><span>Docker</span><span>FastAPI</span><span>MLflow</span><span>Model Versioning</span></div>
+        </div>
+        <div class="pillcard">
+          <h4>Cloud / Databases</h4>
+          <div class="pills"><span>AWS EC2</span><span>AWS S3</span><span>MySQL</span><span>MongoDB</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTS -->
+    <section id="certs" class="section">
+      <div class="section-head">
+        <h2>Certifications</h2>
+        <p class="muted">Verified learning and credentials.</p>
+      </div>
+
+      <div class="card">
+        <ul class="simple">
+          <li>Google Cloud Generative AI Certificate — Google Cloud Skills Boost</li>
+          <li>AWS Machine Learning Foundations — AWS & Udacity</li>
+          <li>Microsoft Azure AI Fundamentals (AI-900)</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h2>Contact</h2>
+        <p class="muted">Let’s connect.</p>
+      </div>
+
+      <div class="card contact">
+        <a class="btn" href="mailto:adivihas@gmail.com">Email</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="#" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn primary" href="files/Vihas_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> Vihas Adi</span>
+      <span class="muted">Built with HTML/CSS · GitHub Pages</span>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
