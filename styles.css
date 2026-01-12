@@ -483,20 +483,22 @@ body{
   }
 }
 /* HERO SOCIAL ICONS */
-.hero-socials {
-  display: flex;
-  gap: 18px;
-  margin-top: 18px;
+.hero-socials{
+  display:flex;
+  gap:16px;
+  margin-top:18px;
+  align-items:center;
 }
 
-.hero-socials a img {
-  width: 28px;
-  height: 28px;
-  filter: brightness(0) invert(1); /* white icons */
-  transition: transform 0.2s ease, opacity 0.2s ease;
+.hero-socials .icon{
+  width:28px;
+  height:28px;
+  object-fit:contain;
+  filter: brightness(0) invert(1); /* turns dark PNG icons white */
+  transition: transform .2s ease, opacity .2s ease;
 }
 
-.hero-socials a:hover img {
+.hero-socials .icon-link:hover .icon{
   transform: translateY(-3px);
-  opacity: 0.8;
+  opacity: 0.85;
 }
